@@ -28,7 +28,7 @@ class Queue
     const int& peek();
 
     void enqueue(const int& item);
-    void dequeue(const int& item);
+    void dequeue();
     
 
 };

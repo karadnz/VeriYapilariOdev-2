@@ -74,7 +74,7 @@ void Queue::enqueue(const int& item)
 
 }
 
-void Queue::dequeue(const int& item) //silmek
+void Queue::dequeue() //silmek
 {
     if(isEmpty()) throw "empty Queue";
     
