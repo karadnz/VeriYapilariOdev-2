@@ -12,10 +12,15 @@ class Sistem
 
     Organ *organlar;
 
+    Sistem  *next;
+    Sistem  *prev;
+
     public:
 
 
     Sistem();
+
+    friend class Organizma;
     //~Hucre();
 
     //dash mi degilmi fonk.
