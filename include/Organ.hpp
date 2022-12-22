@@ -14,7 +14,6 @@ class Organ
 
     public:
 
-    int DNA_len;
     Organ();
     Organ(IkiliAramaAgaci *);
     //~Hucre();

@@ -166,7 +166,7 @@ int IkiliAramaAgaci::yukseklik(Dugum* aktifDugum)
 }
 void IkiliAramaAgaci::ekle(int veri,Dugum* aktifDugum) 
 {
-	if(aktifDugum->veri>veri)
+	if(aktifDugum->veri>veri || aktifDugum->veri == veri)
     {
         if(aktifDugum->sol)
             ekle(veri,aktifDugum->sol);

@@ -3,7 +3,7 @@
 
 Organ::Organ()
 {
-    this->Agac = NULL;
+    this->Agac = new IkiliAramaAgaci;
 }
 
 Organ::Organ(IkiliAramaAgaci *agac)
