@@ -6,9 +6,6 @@ Doku::Doku(int size)
     this->Hucreler = new Hucre[size];
     this->size = size;
     hucreCount = 0;
-
-    this->next = NULL;
-    this->prev = NULL;
 }
 
 void Doku::addHucre(Hucre hucre)
