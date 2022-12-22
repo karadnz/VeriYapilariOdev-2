@@ -19,6 +19,7 @@ class Radix
     int getMaxStepCount();
     int StepCount(int);
     int *QueueCurrentLengths();
+    int power(int num);
 
 
     public:

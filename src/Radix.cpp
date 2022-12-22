@@ -57,6 +57,17 @@ int* Radix::QueueCurrentLengths(){
 	return lengths;
 }
 
+int Radix::power(int num)
+{
+	int result = 1;
+
+	for(int i = 0; i < num; i++)
+    {
+        result *= 10;
+    }
+	return result;
+}
+
 int *Radix::sort()
 {
     int numIndex = 0;
@@ -84,7 +95,7 @@ int *Radix::sort()
 
                 queues[j]->dequeue();
 
-                int stepValue = (number / (int)pow(10, i)) % 10;
+                int stepValue = (number / power(i)) % 10;
                 queues[stepValue]->enqueue(number);
             }
         }
