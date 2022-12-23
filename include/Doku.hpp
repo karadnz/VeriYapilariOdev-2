@@ -3,26 +3,31 @@
 
 #include <iostream>
 #include "Hucre.hpp"
+#include <sstream>
 
 using namespace std;
 
 class Doku
 {
-    private:
+    public:
 
-    Hucre   *Hucreler;
+    Hucre   **Hucreler; //hucre pointerlerini tutan bir array
     int     hucreCount;
     int     size;
 
     // Doku    *next;
     // Doku    *prev;
 
-    public:
 
-    void addHucre(Hucre);
+    void addHucre(Hucre *);
+    int getWordCount(string);
 
-    void printDoku();
-    Doku(int);
+    void    printDoku();
+    int     getMiddle();
+
+    Doku(int *,int); //array yollayarak
+    Doku(int);  //size
+    Doku(string); //line
     //~Doku();
 
     

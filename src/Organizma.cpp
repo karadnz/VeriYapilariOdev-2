@@ -23,7 +23,7 @@ Sistem* Organizma::FindPrevByPosition(int pos) //0 gelmeyecek bu fonk a
 	}
 	return NULL;
 }
-void addBack(Sistem *node)
+void Organizma::addBack(Sistem *node)
 {
     insert(node, size);
 }

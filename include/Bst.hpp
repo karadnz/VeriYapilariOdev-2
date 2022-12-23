@@ -1,40 +1,33 @@
-#ifndef Bst_hpp
-#define Bst_hpp
+#ifndef BST_HPP
+#define BST_HPP
+
 #include <iostream>
-#include "Dugum.hpp"
+#include "BSTNode.hpp"
+
 using namespace std;
 
-class IkiliAramaAgaci
+class BST
 {
-public:
+	private:
 
-	IkiliAramaAgaci();
+	BSTNode *root;
 
-	~IkiliAramaAgaci();
-	bool varmi(int veri);
-	void ekle(int veri);
-	void sil(int veri);
-    friend ostream& operator<<(ostream& os,IkiliAramaAgaci& kuyruk);
-	int yukseklik();
-	void preOrder();
-	void postOrder();
-	void inOrder();
-	
-private:
-	void levelOrder(Dugum* aktif,int level);
-	void levelOrder();
-	void preOrder(Dugum* aktif);
-	void postOrder(Dugum* index);
-	void inOrder(Dugum* index);
-	int yukseklik(Dugum* aktifDugum);
-	void ekle(int veri,Dugum* aktifDugum);
-	bool varmi(int aranan,Dugum* aktif);
-	void silDonguile(Dugum* aktif,Dugum* Ebeveyn);
-	void sil(int aranan,Dugum* &aktif);
-	int maxDeger(Dugum* aktif);
-	int agacYukseklik;
-	void boslukBirak(int adet);
-	Dugum* kok;
+	void searchAndAdd(BSTNode *&subNode, Doku *doku); //subnode eklenilecek olan node eklenecek olan
+	void	postOrder(BSTNode *subNode);
+	int		getHeight(BSTNode *root);
+	bool	isBalanced(BSTNode *root);
+
+	public:
+
+	BST();
+
+	bool	isEmpty();
+	void	add(Doku *doku);
+	void	postOrder();
+
+	bool	isBalanced();
+	//void	clear();  EKLE
+
 };
 
 #endif

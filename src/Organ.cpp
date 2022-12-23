@@ -3,10 +3,10 @@
 
 Organ::Organ()
 {
-    this->Agac = new IkiliAramaAgaci;
+    this->Tree = new BST();
 }
 
-Organ::Organ(IkiliAramaAgaci *agac)
+Organ::Organ(BST *Tree)
 {
-    this->Agac = agac;
+    this->Tree = Tree;
 }

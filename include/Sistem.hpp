@@ -10,7 +10,10 @@ class Sistem
 {
     private:
 
-    Organ *organlar;
+    Organ **organlar;
+
+    int size;
+    void addOrgan(Organ *node);
 
     Sistem  *next;
     Sistem  *prev;
