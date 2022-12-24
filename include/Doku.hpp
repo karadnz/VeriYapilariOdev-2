@@ -1,3 +1,11 @@
+/**
+* @file Doku.hpp
+* @description hpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #ifndef DOKU_HPP
 #define DOKU_HPP
 
@@ -15,16 +23,10 @@ class Doku
     int     hucreCount;
     int     size;
 
-    // Doku    *next;
-    // Doku    *prev;
-
-
     void addHucre(Hucre *);
     int getWordCount(string);
-
     void    printDoku();
     int     getMiddle();
-
     int*    returnMutated();
     void    mutate();
     int*    returnArr();
@@ -32,9 +34,7 @@ class Doku
     Doku(int *,int); //array yollayarak
     Doku(int);  //size
     Doku(string); //line
-    //~Doku();
-
-    
+    ~Doku();
 
 };
 

@@ -1,3 +1,11 @@
+/**
+* @file BSTNode.hpp
+* @description header file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #ifndef BSTNODE_HPP
 #define BSTNODE_HPP
 
@@ -18,6 +26,7 @@ class BSTNode
     
 
     BSTNode(Doku *, BSTNode * = NULL, BSTNode * = NULL);
+    ~BSTNode();
 };
 
 #endif

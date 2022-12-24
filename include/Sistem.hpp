@@ -1,3 +1,11 @@
+/**
+* @file Sistem.hpp
+* @description hpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #ifndef SISTEM_HPP
 #define SISTEM_HPP
 
@@ -20,13 +28,9 @@ class Sistem
 
 
     Sistem();
+    ~Sistem();
 
     friend class Organizma;
-    //~Hucre();
-
-    //dash mi degilmi fonk.
-
-    
 
 };
 

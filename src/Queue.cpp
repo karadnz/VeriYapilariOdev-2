@@ -1,3 +1,11 @@
+/**
+* @file Queue.cpp
+* @description cpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #include "Queue.hpp"
 
 Queue::Queue()
@@ -21,7 +29,7 @@ void Queue::reserve(int newCap)
     for(int i = 0, j = front; i < length; i++)
     {
         tmp[i] = items[j];
-        j = (j + 1) % cap; // https://youtu.be/oMPYf_yVcY4?list=PLh8R31K8J_9ClTt-87z7y2F-uzOrDgIof&t=656
+        j = (j + 1) % cap;
 
     }
     

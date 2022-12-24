@@ -1,3 +1,11 @@
+/**
+* @file Radix.cpp
+* @description cpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #include "Radix.hpp"
 
 int Radix::getMaxStepCount()
@@ -36,7 +44,7 @@ Radix::Radix(int *numbers, int length)
         this->numbers[i] = numbers[i];
     }
     
-    queues = new Queue* [10]; //niye fix bi sayi
+    queues = new Queue* [10]; 
 
     for(int i = 0; i < 10; i++)
     {

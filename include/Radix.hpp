@@ -1,3 +1,11 @@
+/**
+* @file Radix.hpp
+* @description hpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #ifndef RADIX_HPP
 #define RADIX_HPP
 

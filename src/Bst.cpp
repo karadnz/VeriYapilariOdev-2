@@ -1,3 +1,11 @@
+/**
+* @file BST.cpp
+* @description cpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #include "BST.hpp"
 #include "BSTNode.hpp"
 #include "Doku.hpp"
@@ -5,7 +13,7 @@
 #include <iomanip>
 #include <iostream>
 #include <cmath>
-#include <queue>
+
 using namespace std;
 
 
@@ -134,3 +142,30 @@ void BST::fillMutated(BSTNode *subNode,Doku **mutatedDokular,int &index)
         
     }
 }
+
+void BST::clear(BSTNode *subNode)
+{
+    if (subNode != NULL)
+    {
+        clear(subNode->left);
+        clear(subNode->right);
+        delete subNode;
+    }
+}
+
+void BST::clear()
+{
+    if (root != NULL)
+    {
+        clear(root->left);
+        clear(root->right);
+    }
+}
+
+
+BST::~BST()
+{
+    clear(root);
+    
+}
+

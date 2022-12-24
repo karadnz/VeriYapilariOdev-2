@@ -1,3 +1,11 @@
+/**
+* @file Doku.cpp
+* @description cpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #include "Doku.hpp"
 
 Doku::Doku(int size)
@@ -133,3 +141,12 @@ int* Doku::returnArr()
     
 }
 
+
+Doku::~Doku()
+{
+    for (int i = 0; i < size; i++)
+    {
+        delete Hucreler[i];
+    }
+    delete[] Hucreler;
+}

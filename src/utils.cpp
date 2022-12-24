@@ -1,3 +1,11 @@
+/**
+* @file utils.cpp
+* @description cpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #include "utils.hpp"
 
 int getWordCount(string line)

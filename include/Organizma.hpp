@@ -1,3 +1,11 @@
+/**
+* @file Organizma.hpp
+* @description hpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #ifndef ORGANIZMA_HPP
 #define ORGANIZMA_HPP
 
@@ -21,16 +29,13 @@ class Organizma
     void    removeAt(Sistem *node, int index);
     Sistem* FindPrevByPosition(int pos);
 
+    bool    isEmpty();
+
     void    yazdir();
     void    mutasyon();
 
     Organizma();
-    //~Hucre();
-
-    //dash mi degilmi fonk.
-
-    
-
+    ~Organizma();
 };
 
 #endif

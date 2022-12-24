@@ -1,4 +1,11 @@
-
+/**
+* @file main.hpp
+* @description main program.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #include "utils.hpp"
 
 using namespace std;
@@ -49,13 +56,31 @@ int main()
         organizma->addBack(sistem);
     }
 
-    //organizma->yazdir();
+    system("cls");
+    cout<<"                               ORGANIZMA"<<endl;
+    organizma->yazdir();
     
     cout<<endl<<endl<<endl;
+    while(true)
+    {
+        string input;
+        //cin >> input;
+        cin.ignore();
+        system("cls");
 
-    organizma->mutasyon();
+        cout<<"                               ORGANIZMA(MUTASYONA UGRADI)"<<endl;
+        Kontrol kontrol(organizma);
+        kontrol.mutate();
 
-    organizma->yazdir();
+
+
+    }
+    
+    //organizma->mutasyon();
+
+    //organizma->yazdir();
+
+    delete organizma;
 
     return (0);
 }

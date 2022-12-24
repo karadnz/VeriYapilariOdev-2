@@ -1,4 +1,11 @@
-//enqueue, dequeue, peek, isEmpty, count
+/**
+* @file Queue.hpp
+* @description hpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #ifndef QUEUE_HPP
 #define QUEUE_HPP
 

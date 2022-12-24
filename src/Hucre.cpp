@@ -1,3 +1,11 @@
+/**
+* @file Hucre.cpp
+* @description cpp file.
+* @course 2-A
+* @assignment 2
+* @date 
+* @author Mustafa Karadeniz g211210066
+*/
 #include "Hucre.hpp"
 
 Hucre::Hucre(int num)

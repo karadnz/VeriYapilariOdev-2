@@ -1,28 +1,28 @@
 /**
-* @file Organ.hpp
+* @file Kontrol.hpp
 * @description hpp file.
 * @course 2-A
 * @assignment 2
 * @date 
 * @author Mustafa Karadeniz g211210066
 */
-#ifndef ORGAN_HPP
-#define ORGAN_HPP
+#ifndef KONTROL_HPP
+#define KONTROL_HPP
 
 #include <iostream>
-#include "BST.hpp"
+#include "Organizma.hpp"
 
 using namespace std;
 
-class Organ
+class Kontrol
 {
     public:
 
-    BST *Tree;
+    Organizma *organizma;
 
-    Organ();
-    Organ(BST *);
-    ~Organ();
+    Kontrol(Organizma *organizma);
+
+    void mutate();
 
 };
 
