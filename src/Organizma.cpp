@@ -62,3 +62,68 @@ void Organizma::insert(Sistem *node, int index)
 
 
 }
+
+
+void Organizma::yazdir()
+{
+	Sistem *iter = head;
+
+	while(iter != NULL)
+	{
+		for (int i = 0; i < 100; i++)
+		{
+			if (iter->organlar[i]->Tree->isBalanced())
+			{
+				cout << " ";
+			}
+			else
+			{
+				cout << "#";
+			}
+		}
+		cout << endl;
+
+		iter = iter->next;
+		
+	}
+}
+
+void Organizma::mutasyon()
+{
+	Sistem *iter = head;
+
+	while(iter != NULL)
+	{
+		
+		for (int i = 0; i < 100; i++)
+		{
+			if (iter->organlar[i]->Tree->shouldMutate())
+			{
+				
+				Doku **dokular = iter->organlar[i]->Tree->returnMutated();
+
+				//tree clear
+				iter->organlar[i]->Tree = new BST();
+				
+
+				for (int j = 0; j < 20; j++)
+				{
+					int *arr = dokular[j]->returnArr();
+					Radix *radix = new Radix(arr, dokular[j]->size);
+					delete[] arr;
+					arr = radix->sort();
+					Doku *doku = new Doku(arr, dokular[j]->size);
+					delete[] arr;
+					delete radix;
+
+					iter->organlar[i]->Tree->add(doku);
+				}
+				
+			}
+		}
+		
+
+		iter = iter->next;
+		
+	}
+}

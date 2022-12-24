@@ -25,6 +25,10 @@ class Doku
     void    printDoku();
     int     getMiddle();
 
+    int*    returnMutated();
+    void    mutate();
+    int*    returnArr();
+
     Doku(int *,int); //array yollayarak
     Doku(int);  //size
     Doku(string); //line

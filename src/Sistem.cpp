@@ -4,7 +4,7 @@
 Sistem::Sistem()
 {
     this->organlar = new Organ *[100];
-    size = 0;
+    this->organCount = 0;
 
     this->next = NULL;
     this->prev = NULL;
@@ -13,5 +13,6 @@ Sistem::Sistem()
 
 void Sistem::addOrgan(Organ *node)
 {
-    this->organlar[size] = node;
+    this->organlar[organCount] = node;
+    organCount++;
 }

@@ -84,3 +84,52 @@ int Doku::getMiddle()
 {
     return (Hucreler[(size - 1) / 2]->DNA_len);
 }
+
+int* Doku::returnMutated()
+{
+    int *arr = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        if((Hucreler[i]->DNA_len % 2) == 0)
+        {
+            arr[i] = Hucreler[i]->DNA_len / 2;
+        }
+        else
+        {
+            arr[i] = Hucreler[i]->DNA_len;
+        }
+    }
+
+    return(arr);
+    
+}
+
+
+void Doku::mutate()
+{
+
+    for (int i = 0; i < size; i++)
+    {
+        if((Hucreler[i]->DNA_len % 2) == 0)
+        {
+            Hucreler[i]->DNA_len = Hucreler[i]->DNA_len / 2;
+        }
+    }
+    
+}
+
+
+int* Doku::returnArr()
+{
+    int *arr = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = Hucreler[i]->DNA_len;
+    }
+
+    return(arr);
+    
+}
+

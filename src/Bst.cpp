@@ -95,3 +95,42 @@ bool BST::isBalanced(BSTNode *root)
         return (isBalanced(root->left) && isBalanced(root->right));
     }
 }
+
+
+bool BST::shouldMutate()
+{
+    return ((this->root->data % 50) == 0);
+}
+
+
+
+
+
+Doku** BST::returnMutated()
+{
+    Doku **mutatedDokular = new Doku*[20];
+    // int *index = new int;
+    // *index = 0;
+
+    int index = 0;
+    fillMutated(root,mutatedDokular,index);
+
+    return(mutatedDokular);
+
+    
+}
+
+
+void BST::fillMutated(BSTNode *subNode,Doku **mutatedDokular,int &index)
+{
+    if (subNode != NULL)
+    {
+        fillMutated(subNode->left,mutatedDokular,index);
+        fillMutated(subNode->right,mutatedDokular,index);
+        subNode->doku->mutate();
+        mutatedDokular[index] = subNode->doku;
+        //*index = *index + 1;
+        index++;
+        
+    }
+}

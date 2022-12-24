@@ -8,17 +8,15 @@ using namespace std;
 
 class Sistem
 {
-    private:
+    public:
 
     Organ **organlar;
 
-    int size;
+    int organCount;
     void addOrgan(Organ *node);
 
     Sistem  *next;
     Sistem  *prev;
-
-    public:
 
 
     Sistem();

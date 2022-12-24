@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "BSTNode.hpp"
+#include "Radix.hpp"
 
 using namespace std;
 
@@ -16,6 +17,9 @@ class BST
 	void	postOrder(BSTNode *subNode);
 	int		getHeight(BSTNode *root);
 	bool	isBalanced(BSTNode *root);
+	void	fillMutated(BSTNode *subNode,Doku **mutatedDokular,int &index);
+
+	
 
 	public:
 
@@ -26,6 +30,9 @@ class BST
 	void	postOrder();
 
 	bool	isBalanced();
+	bool	shouldMutate();
+	
+	Doku**	returnMutated();
 	//void	clear();  EKLE
 
 };
