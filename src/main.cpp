@@ -57,6 +57,7 @@ int main()
     }
 
     system("cls");
+    cout<<endl;
     cout<<"                               ORGANIZMA"<<endl;
 
     organizma->yazdir();
@@ -64,6 +65,7 @@ int main()
     cout<<endl<<endl<<endl;
     cin.ignore();
     system("cls");
+    cout<<endl;
     cout<<"                               ORGANIZMA(MUTASYONA UGRADI)"<<endl;
 
     Kontrol kontrol(organizma);
