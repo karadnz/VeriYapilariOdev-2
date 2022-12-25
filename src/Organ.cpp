@@ -19,7 +19,6 @@ Organ::Organ(BST *Tree)
     this->Tree = Tree;
 }
 
-
 Organ::~Organ()
 {
     delete Tree;

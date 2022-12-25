@@ -36,8 +36,6 @@ class Radix
     int *sort();
     ~Radix();
 
-    
-
 };
 
 #endif

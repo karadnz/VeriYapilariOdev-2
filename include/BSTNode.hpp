@@ -13,7 +13,6 @@
 
 class BSTNode
 {
-
     public:
 
     Doku *doku;
@@ -24,7 +23,6 @@ class BSTNode
     BSTNode *right;
     BSTNode *left;
     
-
     BSTNode(Doku *, BSTNode * = NULL, BSTNode * = NULL);
     ~BSTNode();
 };

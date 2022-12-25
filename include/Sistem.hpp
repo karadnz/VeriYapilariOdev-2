@@ -26,7 +26,6 @@ class Sistem
     Sistem  *next;
     Sistem  *prev;
 
-
     Sistem();
     ~Sistem();
 

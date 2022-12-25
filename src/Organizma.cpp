@@ -14,7 +14,6 @@ Organizma::Organizma()
     this->size = 0;
 }
 
-
 Sistem* Organizma::FindPrevByPosition(int pos)
 {
     if (pos < 0 || pos > size)
@@ -31,10 +30,12 @@ Sistem* Organizma::FindPrevByPosition(int pos)
 	}
 	return NULL;
 }
+
 void Organizma::addBack(Sistem *node)
 {
     insert(node, size);
 }
+
 void Organizma::insert(Sistem *node, int index)
 {
     Sistem *iter = this->head;
@@ -69,7 +70,6 @@ void Organizma::insert(Sistem *node, int index)
 	this->size++;
 
 }
-
 
 void Organizma::yazdir()
 {

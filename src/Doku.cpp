@@ -113,7 +113,6 @@ int* Doku::returnMutated()
     
 }
 
-
 void Doku::mutate()
 {
 
@@ -127,7 +126,6 @@ void Doku::mutate()
     
 }
 
-
 int* Doku::returnArr()
 {
     int *arr = new int[size];
@@ -140,7 +138,6 @@ int* Doku::returnArr()
     return(arr);
     
 }
-
 
 Doku::~Doku()
 {

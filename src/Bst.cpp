@@ -16,12 +16,10 @@
 
 using namespace std;
 
-
 BST::BST()
 {
     this->root = NULL;
 }
-
 
 bool BST::isEmpty()
 {
@@ -104,15 +102,10 @@ bool BST::isBalanced(BSTNode *root)
     }
 }
 
-
 bool BST::shouldMutate()
 {
     return ((this->root->data % 50) == 0);
 }
-
-
-
-
 
 Doku** BST::returnMutated()
 {
@@ -127,7 +120,6 @@ Doku** BST::returnMutated()
 
     
 }
-
 
 void BST::fillMutated(BSTNode *subNode,Doku **mutatedDokular,int &index)
 {

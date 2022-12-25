@@ -6,16 +6,12 @@
 * @date 
 * @author Mustafa Karadeniz g211210066
 */
-
-
 #include "Kontrol.hpp"
-
 
 Kontrol::Kontrol(Organizma *organizma)
 {
     this->organizma = organizma;
 }
-
 
 void Kontrol::mutate()
 {

@@ -58,27 +58,17 @@ int main()
 
     system("cls");
     cout<<"                               ORGANIZMA"<<endl;
+
     organizma->yazdir();
     
     cout<<endl<<endl<<endl;
-    while(true)
-    {
-        string input;
-        //cin >> input;
-        cin.ignore();
-        system("cls");
+    cin.ignore();
+    system("cls");
+    cout<<"                               ORGANIZMA(MUTASYONA UGRADI)"<<endl;
 
-        cout<<"                               ORGANIZMA(MUTASYONA UGRADI)"<<endl;
-        Kontrol kontrol(organizma);
-        kontrol.mutate();
-
-
-
-    }
-    
-    //organizma->mutasyon();
-
-    //organizma->yazdir();
+    Kontrol kontrol(organizma);
+    kontrol.mutate();
+    cin.ignore();
 
     delete organizma;
 
